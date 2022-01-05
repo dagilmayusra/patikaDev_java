@@ -4,19 +4,19 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		int r;
-		double pi=3.14;
+		Scanner scan = new Scanner(System.in);
 		
-		Scanner inp = new Scanner(System.in);
-		
-		System.out.println("Dairenin yarýçapýný giriniz: ");
-		r= inp.nextInt();
-		double alan=pi * r * r;
-		double cevre=2 * pi * r;
-		
-		System.out.println("Dairenin alaný: " +alan);
-		System.out.println("Dairenin cevresi: " + cevre);
-		
+        double pi=3.14, alan ,r ,a;
+        
+        System.out.print("YarÄ±Ã§ap:");
+        r=scan.nextDouble();
+        
+        System.out.print("AÃ§Ä±:");
+        a=scan.nextDouble();
+        
+        alan=(pi*r*r*a)/a;
+        System.out.println("Alan: "+alan);
 	}
 
 }
+
